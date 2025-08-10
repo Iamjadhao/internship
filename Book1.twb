@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Instagram' inline='true' name='federated.0kdbg1k03icq6g1bu08rc0ur88t3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Instagram' name='textscan.13zw0bi0xjbgq51andpsc0jotily'>
+            <connection class='textclean' cleaning='yes' compat='no' csvFile='C:/Users/ASHUTOSH/Downloads/Unified Mentor/New folder/Instagram.txt' dataRefreshTime='' directory='C:/Users/ASHUTOSH/Downloads/Unified Mentor/New folder' filename='C:/Users/ASHUTOSH/AppData/Local/Temp/TableauTemp/086k8no0xff2xm11koij7100wfhs/Instagram.txt.xlsx' interpretationMode='8' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.13zw0bi0xjbgq51andpsc0jotily' name='Instagram.txt' table='[Instagram#txt$]' type='table'>
+          <columns character-set='UTF-16LE' gridOrigin='A1:J201:no:A1:J201:1' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='rank' ordinal='0' />
+            <column datatype='string' name='channel_info' ordinal='1' />
+            <column datatype='integer' name='influence_score' ordinal='2' />
+            <column datatype='real' name='Post' ordinal='3' />
+            <column datatype='real' name='Follower' ordinal='4' />
+            <column datatype='real' name='avg_likes' ordinal='5' />
+            <column datatype='real' name='60_day_eng_rate' ordinal='6' />
+            <column datatype='real' name='new_post_avg_like' ordinal='7' />
+            <column datatype='real' name='total_likes' ordinal='8' />
+            <column datatype='string' name='country' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:J201:no:A1:J201:1&quot;</attribute>
+              <attribute datatype='integer' name='lost'>0</attribute>
+              <attribute datatype='integer' name='outcome'>1</attribute>
+              <attribute datatype='integer' name='processed'>1600</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[rank]</local-name>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias>rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>channel_info</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[channel_info]</local-name>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias>channel_info</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>influence_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[influence_score]</local-name>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias>influence_score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Post</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Post]</local-name>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias>Post</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Follower</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Follower]</local-name>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias>Follower</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_likes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_likes]</local-name>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias>avg_likes</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>60_day_eng_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[60_day_eng_rate]</local-name>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias>60_day_eng_rate</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>new_post_avg_like</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[new_post_avg_like]</local-name>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias>new_post_avg_like</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_likes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_likes]</local-name>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias>total_likes</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[Instagram.txt]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='60 Day Eng Rate' datatype='real' name='[60_day_eng_rate]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Avg Likes (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='1' formula='[avg_likes]' peg='0' size='55.1' />
+      </column>
+      <column caption='Engagement Rate' datatype='real' name='[Calculation_505247609928146944]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([avg_likes] / [Follower]) * 100' />
+      </column>
+      <column caption='Growth Rate' datatype='real' name='[Calculation_505247609928589313]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([new_post_avg_like]- [avg_likes]) /&#13;&#10; [avg_likes] * 100' />
+      </column>
+      <column caption='Average Likes per Post' datatype='real' name='[Calculation_505247609929478147]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[total_likes] / [Post]' />
+      </column>
+      <column caption=' Like-to-Follower Ratio' datatype='real' name='[Calculation_505247609929965572]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[total_likes] / [Follower]' />
+      </column>
+      <column aggregation='None' datatype='integer' name='[Follower (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[Follower]' peg='0' size='22.9' />
+      </column>
+      <column datatype='real' name='[Follower]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Post (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='0' formula='[Post]' peg='0' size='1.08' />
+      </column>
+      <column datatype='real' name='[Post]' role='measure' type='quantitative' />
+      <column caption='Instagram.txt' datatype='table' name='[__tableau_internal_object_id__].[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]' role='measure' type='quantitative' />
+      <column caption='Avg Likes' datatype='real' name='[avg_likes]' role='measure' type='quantitative' />
+      <column caption='Channel Info' datatype='string' name='[channel_info]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Influence Score' datatype='integer' name='[influence_score]' role='measure' type='quantitative' />
+      <column caption='New Post Avg Like' datatype='real' name='[new_post_avg_like]' role='measure' type='quantitative' />
+      <column caption='Rank' datatype='integer' name='[rank]' role='measure' type='quantitative' />
+      <column caption='Total Likes' datatype='real' name='[total_likes]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ASHUTOSH/AppData/Local/Temp/TableauTemp/#TableauTemp_128rx0813lz9ep1eury6o0woqn7w.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/01/2025 08:20:06 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rank</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Instagram.txt</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>channel_info</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[channel_info]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>channel_info</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Instagram.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>200</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>influence_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[influence_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>influence_score</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Instagram.txt</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Post</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Post]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Post</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Instagram.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>99</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Follower</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Follower]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Follower</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Instagram.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>165</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_likes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_likes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_likes</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Instagram.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>135</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>60_day_eng_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[60_day_eng_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>60_day_eng_rate</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Instagram.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>147</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>new_post_avg_like</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[new_post_avg_like]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>new_post_avg_like</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Instagram.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>162</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_likes</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[total_likes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_likes</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Instagram.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>116</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>country</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Instagram.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+              <object-id>[Instagram.txt_B7D90C12A2B34A719D8AF357C9530659]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Instagram.txt' id='Instagram.txt_B7D90C12A2B34A719D8AF357C9530659'>
+            <properties context=''>
+              <relation connection='textscan.13zw0bi0xjbgq51andpsc0jotily' name='Instagram.txt' table='[Instagram#txt$]' type='table'>
+                <columns character-set='UTF-16LE' gridOrigin='A1:J201:no:A1:J201:1' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='integer' name='rank' ordinal='0' />
+                  <column datatype='string' name='channel_info' ordinal='1' />
+                  <column datatype='integer' name='influence_score' ordinal='2' />
+                  <column datatype='real' name='Post' ordinal='3' />
+                  <column datatype='real' name='Follower' ordinal='4' />
+                  <column datatype='real' name='avg_likes' ordinal='5' />
+                  <column datatype='real' name='60_day_eng_rate' ordinal='6' />
+                  <column datatype='real' name='new_post_avg_like' ordinal='7' />
+                  <column datatype='real' name='total_likes' ordinal='8' />
+                  <column datatype='string' name='country' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Histogram'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Instagram' name='federated.0kdbg1k03icq6g1bu08rc0ur88t3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kdbg1k03icq6g1bu08rc0ur88t3'>
+            <column datatype='integer' name='[Post (bin)]' role='dimension' type='quantitative'>
+              <calculation class='bin' decimals='0' formula='[Post]' peg='0' size='1.08' />
+            </column>
+            <column datatype='real' name='[Post]' role='measure' type='quantitative' />
+            <column-instance column='[Post]' derivation='Count' name='[cnt:Post:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Post (bin)]' derivation='None' name='[none:Post (bin):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+          </pane>
+        </panes>
+        <rows>[federated.0kdbg1k03icq6g1bu08rc0ur88t3].[cnt:Post:qk]</rows>
+        <cols>[federated.0kdbg1k03icq6g1bu08rc0ur88t3].[none:Post (bin):qk]</cols>
+        <show-full-range>
+          <column>[federated.0kdbg1k03icq6g1bu08rc0ur88t3].[Post (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{460C8B9B-443E-4C3B-865E-D109D3E4D36A}' />
+    </worksheet>
+    <worksheet name='Scatter plot'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Instagram' name='federated.0kdbg1k03icq6g1bu08rc0ur88t3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kdbg1k03icq6g1bu08rc0ur88t3'>
+            <column datatype='real' name='[Follower]' role='measure' type='quantitative' />
+            <column-instance column='[Follower]' derivation='Avg' name='[avg:Follower:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[avg_likes]' derivation='Avg' name='[avg:avg_likes:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Likes' datatype='real' name='[avg_likes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0kdbg1k03icq6g1bu08rc0ur88t3].[avg:avg_likes:qk]</rows>
+        <cols>[federated.0kdbg1k03icq6g1bu08rc0ur88t3].[avg:Follower:qk]</cols>
+      </table>
+      <simple-id uuid='{814A2F4B-CD83-4335-A7F5-EBF2A5A2E4FA}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Histogram'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E1B3B9FE-63CB-4E1E-A004-604553C2F14E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Scatter plot'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0kdbg1k03icq6g1bu08rc0ur88t3].[none:Follower (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{1616A08D-AFA9-46BA-B179-B7D57D427DFD}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Histogram' width='192'>
+      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
+      YII=
+    </thumbnail>
+    <thumbnail height='192' name='Scatter plot' width='192'>
+      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
+      SUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
